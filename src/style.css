@@ -1,6 +1,27 @@
+* {
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+    color: #000000;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #dfdfdf;
+}
+
 .pageContent{
     background-color: green;
     width: 20px;
     height: 20px;
 }
 
+nav button{
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    border-style: solid; /* remove shading */
+    border-color: white;
+    background-color: white;
+}
