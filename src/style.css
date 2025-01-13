@@ -25,3 +25,15 @@ nav button{
     border-color: white;
     background-color: white;
 }
+
+nav{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-auto-rows: none;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
