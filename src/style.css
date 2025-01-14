@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'orbitron';
+    font-weight: 500;
+    src: url(./fonts/Orbitron-Medium.woff2),
+         url(./fonts/Orbitron-Medium.woff);
+}
+@font-face {
+    font-family: 'orbitron';
+    font-weight: 900;
+    src: url(./fonts/Orbitron-Black.woff2),
+         url(./fonts/Orbitron-Black.woff);
+}
+
 * {
     padding: 0;
     margin: 0px;
@@ -11,6 +24,11 @@ body {
     display: flex;
     /* same with this*/
     flex-direction: column; 
+    background-color: #130426;
+
+    font-family: 'orbitron';
+    font-weight: 500;
+    font-size: 32px;
 }
 
 .pageContent {
@@ -44,15 +62,12 @@ nav button:active {
 nav {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: rgb(128, 128, 128);
     /* could add flex 0 0 auto so nav doesnt shrink */
+    align-items: center;
 }
 
 .push-left{
     grid-area:1/2/2/3;
-    justify-self: start;
     z-index: 0; /*adding this fixed my hover on the resturant name not working has something to do with me putting .center and .pushleft in the same grid area*/
 }
 
@@ -61,27 +76,34 @@ nav {
     justify-content: center;
     gap: 10px;
     grid-area: 1/2/2/3;
+    background-color: rgba(49,19,48,255);
+    padding: 10px;
 }
 
-/* This is the b*/
 .content {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    background-color: #130426;
     /* this makes the rest of the page grow to fill the window*/
     flex: 1 0 auto;
 }
 
 .middle-content {
-    margin-top: 10px;
     grid-area: 1 /2/ 2/3;
     background-color: rgba(49,19,48,255);
     color: rgba(174,254,255,255);
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 20px;
+
 }
 
 .burger-image{
     width: 500px;
+}
+
+.welcome{
+    font-size: 72px;
+    font-family: orbitron, sans-serif;
+    font-weight: 900;
 }
