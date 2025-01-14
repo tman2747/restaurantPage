@@ -2,12 +2,13 @@
     padding: 0;
     margin: 0px;
     box-sizing: border-box;
-    color: #000000;
 }
 
 body {
     min-height: 100vh;
     background-color: #dfdfdf;
+    display: flex; /* this is to make the rest of the page a flex container that way the bottom of the content will grow if its not big enough to fill the page */
+    flex-direction: column; /* same with this*/
 }
 
 .pageContent{
@@ -29,11 +30,22 @@ nav button{
 nav{
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;
-        grid-auto-rows: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
 }
 
 .center{
     display: flex;
     justify-content: center;
     gap: 10px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-color: greenyellow;
+    flex: 1 0 auto; /* this makes the rest of the page grow to fill the window*/
+}
+.middle-content{
+    grid-area: 1 /2/ 2/3;
+    background-color: blue;
 }
