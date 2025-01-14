@@ -7,55 +7,64 @@
 body {
     min-height: 100vh;
     background-color: #dfdfdf;
-    display: flex; /* this is to make the rest of the page a flex container that way the bottom of the content will grow if its not big enough to fill the page */
-    flex-direction: column; /* same with this*/
+    /* this is to make the rest of the page a flex container that way the bottom of the content will grow if its not big enough to fill the page */
+    display: flex;
+    /* same with this*/
+    flex-direction: column; 
 }
 
-.pageContent{
+.pageContent {
     background-color: green;
     width: 20px;
     height: 20px;
 }
 
-nav button{
+nav button {
     border-radius: 50px;
     cursor: pointer;
     width: 100px;
     height: 50px;
-    border-style: solid; /* remove shading */
+    /* remove button shading */
+    border-style: solid;
     border-color: white;
     background-color: white;
 }
-nav button:hover{
+
+nav button:hover {
     background-color: rgb(219, 219, 219);
 
 }
-nav button:active{
+
+nav button:active {
     background-color: rgb(149, 149, 149);
     border-color: rgb(172, 172, 172);
 
 }
 
-nav{
-        display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        background-color: rgb(128, 128, 128);
+nav {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(128, 128, 128);
+    /* could add flex 0 0 auto so nav doesnt shrink */
 }
 
-.center{
+.center {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
-.content{
+
+.content {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     background-color: #dfdfdf;
-    flex: 1 0 auto; /* this makes the rest of the page grow to fill the window*/
+    /* this makes the rest of the page grow to fill the window*/
+    flex: 1 0 auto;
 }
-.middle-content{
+
+.middle-content {
     margin-top: 10px;
     grid-area: 1 /2/ 2/3;
     background-color: rgb(128, 128, 128);
