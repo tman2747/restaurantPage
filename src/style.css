@@ -50,16 +50,24 @@ nav {
     /* could add flex 0 0 auto so nav doesnt shrink */
 }
 
+.push-left{
+    grid-area:1/2/2/3;
+    justify-self: start;
+    z-index: 0; /*adding this fixed my hover on the resturant name not working has something to do with me putting .center and .pushleft in the same grid area*/
+}
+
 .center {
     display: flex;
     justify-content: center;
     gap: 10px;
+    grid-area: 1/2/2/3;
 }
 
+/* This is the b*/
 .content {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    background-color: #dfdfdf;
+    background-color: #130426;
     /* this makes the rest of the page grow to fill the window*/
     flex: 1 0 auto;
 }
@@ -67,5 +75,13 @@ nav {
 .middle-content {
     margin-top: 10px;
     grid-area: 1 /2/ 2/3;
-    background-color: rgb(128, 128, 128);
+    background-color: rgba(49,19,48,255);
+    color: rgba(174,254,255,255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger-image{
+    width: 500px;
 }
