@@ -26,12 +26,21 @@ nav button{
     border-color: white;
     background-color: white;
 }
+nav button:hover{
+    background-color: rgb(219, 219, 219);
+    border-color: rgb(172, 172, 172);
+
+}
+nav button:active{
+    background-color: rgb(149, 149, 149); 
+}
 
 nav{
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;
         padding-top: 10px;
         padding-bottom: 10px;
+        background-color: rgb(128, 128, 128);
 }
 
 .center{
@@ -42,10 +51,11 @@ nav{
 .content{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    background-color: greenyellow;
+    background-color: #dfdfdf;
     flex: 1 0 auto; /* this makes the rest of the page grow to fill the window*/
 }
 .middle-content{
+    margin-top: 10px;
     grid-area: 1 /2/ 2/3;
-    background-color: blue;
+    background-color: rgb(128, 128, 128);
 }
