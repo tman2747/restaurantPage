@@ -44,18 +44,22 @@ nav button {
     height: 50px;
     /* remove button shading */
     border-style: solid;
-    border-color: white;
-    background-color: white;
+    border-color: rgba(174,254,255,255);
+    background-color: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px 2px rgb(6, 145, 158);
+    color: rgba(174,254,255,255);
+    font-size: 20px;
+    font-family: 'orbitron';
 }
 
 nav button:hover {
-    background-color: rgb(219, 219, 219);
+    box-shadow: 0px 0px 10px 5px rgb(6, 145, 158);
+
 
 }
 
 nav button:active {
-    background-color: rgb(149, 149, 149);
-    border-color: rgb(172, 172, 172);
+    background-color: rgb(4, 42, 50);
 
 }
 
