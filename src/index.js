@@ -1,6 +1,7 @@
 import "./style.css" // be sure to import styles for webpack
 import homepage from "./homepage";
-//homepage()
+import menupage from "./menu";
+homepage()
 
 const content = document.querySelector(".content") 
 const homebutton = document.querySelector("#home")
@@ -13,5 +14,5 @@ homebutton.addEventListener("click", (e) => {
 
 menu.addEventListener("click", (e)=>{
     content.innerHTML = ""
-
+    menupage()
 })
