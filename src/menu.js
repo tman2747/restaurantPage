@@ -58,4 +58,4 @@ menu.appendChild(new Card("Astro burger W/O cheese",burger,"burger"))
 contentarea.appendChild(pageContent)
 
 
-}
+};
