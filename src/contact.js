@@ -98,34 +98,3 @@ export default () => {
 
     content.appendChild(pageContent);
 };
-
-
-
-
-
-/* <div class="page-content">xxx
-            <div class="signup-form">
-                <fieldset>
-                    <legend>Help us keep in contact</legend>
-                     <form action="#" method=""> <!--removing post because cant be bothered to prevent default -->
-                        <div>
-                            <label for="firstName">First Name</label><br>
-                            <input type="text" name="firstName" id="firstName" required><br>
-                        </div>
-                        <div>
-                            <label for="lastName">Last Name</label><br>
-                            <input type="text" name="lastName" id="lastName" required><br>
-                        </div>
-                        <div>
-                            <label for="email">Email</label><br>
-                            <input type="email" name="email" id="email" required><br>
-                        </div>
-                        <div>
-                            <label for="phone">Phone Number</label><br>
-                            <input type="tel" name="phone" id="phone" maxlength="10" pattern="[0-9]{10}" required><br>
-                        </div>
-                        <button type="submit">submit</button>
-                    </form>
-                </fieldset>
-            </div>
-        </div> */
