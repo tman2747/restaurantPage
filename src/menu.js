@@ -18,7 +18,7 @@ class Card{
         let itemname = document.createElement("p")
         itemname.innerHTML = this.name
         this.card.appendChild(itemname)
-       // image here
+        
         let imagecontainer = document.createElement("div")
         imagecontainer.classList.add("card-image-container")
         this.card.appendChild(imagecontainer)
@@ -27,7 +27,6 @@ class Card{
         image.alt = this.imagealtText
         imagecontainer.appendChild(image)
 
-//
         let button = document.createElement("button")
         button.innerText = "More Info"
         this.card.appendChild(button)
@@ -53,7 +52,7 @@ pageContent.appendChild(menu)
 
 
 menu.appendChild(new Card("Astro burger",burger,"burger"))
-menu.appendChild(new Card("Atomic Waste Salad",salad,"burger"))
+menu.appendChild(new Card("Atomic Waste Salad",salad,"salad"))
 menu.appendChild(new Card("Astro burger W/O cheese",burger,"burger"))
 
 contentarea.appendChild(pageContent)

@@ -175,3 +175,48 @@ nav {
     background-color: rgba(2, 19, 22, 0.675);
 
 }
+.signup-form{
+    box-shadow: 0px 0px 20px 10px aqua;
+    margin-top: 30px;
+}
+
+.signup-form fieldset{
+    border: 2px none aqua;
+    padding: 10px;
+}
+
+
+
+.signup-form form{
+    padding: 10px;
+    width: 450px;
+    line-height: 30px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form form input{
+    height: 25px;
+    background: #130426;
+    border: 1px #200542 solid;
+    color: rgb(6, 145, 158);
+    width: 300px;
+}
+
+.signup-form button{
+    margin-top: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    /* remove button shading */
+    border-style: solid;
+    border-color: rgba(174,254,255,255);
+    background-color: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px 2px rgb(6, 145, 158);
+    color: rgba(174,254,255,255);
+    font-size: 20px;
+    font-family: 'orbitron';
+    align-self: center;
+}

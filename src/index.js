@@ -1,7 +1,7 @@
 import "./style.css" // be sure to import styles for webpack
 import homepage from "./homepage";
 import menupage from "./menu";
-homepage()
+//homepage()
 
 const content = document.querySelector(".content") 
 const homebutton = document.querySelector("#home")
